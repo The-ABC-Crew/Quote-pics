@@ -37,8 +37,10 @@ h2 {
 }
 
 #backgroundImg {
-    height: 100%;
-    width: 100%;  
+    background-image: url("https://hindmanfuneralhomes.com/wp-content/uploads/2020/11/pexels-photo-417074.jpeg");
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 500px;  
 }
 
 #quotePicImg {
