@@ -1,3 +1,75 @@
 *{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Festive', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(168, 153, 250);
+    
+}
+
+main {
+    /* background-color: rgb(95, 6, 184); */
+}
+
+header {
+    display: block;
+    text-align: center;   
+    font-size: 28px;
+    margin: 0;
+    line-height: .5;
+    background-color: rgb(34, 190, 190);
+    
+}
+
+.topOfPage {
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(34, 190, 190); */
+}
+
+
+h1 {
+    font-size: 52px;
+    background-color: rgb(34, 190, 190);
+}
+
+h2 {
+    background-color: rgb(34, 190, 190);
+}
+
+#backgroundImg {
+    height: 100%;
+    width: 100%;  
+}
+
+#quotePicImg {
+    height: 600px;
+    width: 400px;
+    border-style:ridge;
+    border-width: 20px;
+}
+
+.click-me {
+    text-align: center;
+    background-color: rgb(34, 190, 190);
+    
+}
+
+button {
+    height: 70px;
+    background-color: rgb(86, 250, 113);
+    font-weight: 800;
+    font-size: 32px;
+    font-family: fantasy;
+    width: 200px;
+    border: dashed 6px royalblue;
+}
+
+#picQuoteButton {
+    width: 290px;
+    height: 140px;
+    font-family:fantasy;
+    background-color: magenta;
+    line-height: 1.75;
+    border: solid 7px black;
+    font-size: 28px;
 }
