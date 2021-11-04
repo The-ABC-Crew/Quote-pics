@@ -2,8 +2,7 @@
     font-family: 'Festive', cursive;
     font-family: 'Quicksand', sans-serif;
     font-family: 'Roboto', sans-serif;
-    /* background-color: rgb(168, 153, 250); */
-
+    background-color: rgb(185, 182, 182);
     
 }
 .hero-image {
@@ -20,16 +19,18 @@ main{
 }
 
 header {
+
     display: block;
     text-align: center;   
     font-size: 28px;
     margin: 0;
     line-height: .5;
-    background-color: rgb(34, 190, 190);
+    background-color: black;
     
 }
 
 .topOfPage {
+    
     display: flex;
     flex-direction: column;
     /* background-color: rgb(34, 190, 190); */
@@ -37,12 +38,14 @@ header {
 
 
 h1 {
+    color: white;
     font-size: 52px;
-    background-color: rgb(34, 190, 190);
+    background-color: black;
 }
 
 h2 {
-    background-color: rgb(34, 190, 190);
+    color: white;
+    background-color: black;
 }
 
 /* #backgroundImg {
@@ -59,21 +62,26 @@ h2 {
     border-width: 20px;
 }
 
-.click-me {
+.clickMe {
     text-align: center;
-    background-color: rgb(34, 190, 190);
+    background-color: black;
     
 }
 
 button {
-    height: 70px;
-    background-color: rgb(86, 250, 113);
+    height: 50px;
+    background-color: white;
     font-weight: 800;
-    font-size: 32px;
+    font-size: 28px;
     font-family: fantasy;
-    width: 200px;
-    border: dashed 6px royalblue;
+    width: 565px;
+    border: solid black;
+    display: inline;
 }
+
+/* #backgroundButton {
+    width: 250px;
+} */
 
 #picQuoteButton {
     width: 290px;
