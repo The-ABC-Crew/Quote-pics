@@ -50,24 +50,20 @@ h2 {
     font-size: 20px;
 }
 
-/* #backgroundImg {
-    background-image: url("https://hindmanfuneralhomes.com/wp-content/uploads/2020/11/pexels-photo-417074.jpeg");
-    background-repeat: no-repeat;
-    height: 500px;
-    width: 500px;  
-} */
+p {
+    color: white;
+    background-color: black;
+}
+
+.hero-text {
+    background-color: black;
+}
 
 #quotePicImg {
     height: 450px;
     width: 350px;
     border-style:ridge;
     border-width: 20px;
-}
-
-.clickMe {
-    text-align: center;
-    background-color: black;
-    
 }
 
 button {
