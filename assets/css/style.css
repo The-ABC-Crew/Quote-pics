@@ -5,8 +5,16 @@
     background-color: rgb(185, 182, 182);
     
 }
+.hero-image {
+    background-image: url("../Images/WEF-Investments-In-Nature-Based-Solutions-Have-To-Triple-By-2030-To-Address-Climate-Change-Biodiversity-Loss.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
 
-main {
+main{
     /* background-color: rgb(95, 6, 184); */
 }
 
@@ -40,12 +48,12 @@ h2 {
     background-color: black;
 }
 
-#backgroundImg {
+/* #backgroundImg {
     background-image: url("https://hindmanfuneralhomes.com/wp-content/uploads/2020/11/pexels-photo-417074.jpeg");
     background-repeat: no-repeat;
     height: 500px;
     width: 500px;  
-}
+} */
 
 #quotePicImg {
     height: 600px;
