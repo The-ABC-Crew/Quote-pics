@@ -88,3 +88,16 @@ button {
     border-radius: 30px;
     font-size: 28px;
 }
+
+aside {
+    width: 300px;
+}
+
+footer {
+    background-color: black;
+}
+
+#footerText {
+    background-color: black;
+    color: white;
+}
