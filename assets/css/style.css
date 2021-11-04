@@ -14,9 +14,9 @@ header {
 
     display: block;
     text-align: center;   
-    font-size: 28px;
+    font-size: 20px;
     margin: 0;
-    line-height: .5;
+    line-height: 0;
     background-color: black;
     
 }
@@ -31,13 +31,14 @@ header {
 
 h1 {
     color: white;
-    font-size: 52px;
+    font-size: 32px;
     background-color: black;
 }
 
 h2 {
     color: white;
     background-color: black;
+    font-size: 20px;
 }
 
 #backgroundImg {
@@ -71,9 +72,6 @@ button {
     display: inline;
 }
 
-/* #backgroundButton {
-    width: 250px;
-} */
 
 #picQuoteButton {
     width: 290px;
