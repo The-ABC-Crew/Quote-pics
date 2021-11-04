@@ -49,8 +49,8 @@ h2 {
 }
 
 #quotePicImg {
-    height: 600px;
-    width: 400px;
+    height: 450px;
+    width: 350px;
     border-style:ridge;
     border-width: 20px;
 }
@@ -80,5 +80,6 @@ button {
     background-color: magenta;
     line-height: 1.75;
     border: solid 7px black;
+    border-radius: 30px;
     font-size: 28px;
 }
