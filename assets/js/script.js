@@ -1,6 +1,8 @@
 var backgroundImgEl = document.querySelector(".hero-image");
+var quotePicEl = document.querySelector('#quotePicImg');
 var backgroundBtn = document.querySelector("#backgroundBtn");
 var picQuoteBtn = document.querySelector('#picQuoteButton');
+
 
 var exclusionArray = ['and', 'the', 'i', 'you', 'we', 'they', 
 'them', 'at', 'is', 'not', 'of', 'to', 'from', 'for', 'who', 'what', 'how', 'why', 'where', 'when', 'it', 'it\'s',
@@ -8,7 +10,7 @@ var exclusionArray = ['and', 'the', 'i', 'you', 'we', 'they',
 'our', 'are', 'about', 'that', 'that\'s', 'who', 'whose', 'mine', 'yours', 'by', 'yes', 'no', 'shit', 'bitch',
 'fuck', 'ass', 'whore', 'slut', 'asshole', 'bastard', 'god', 'goddamn', 'goddammit', 'penis', 'vagina', 'pussy',
 'dick', 'motherfucker', 'fucker', 'retard', 'retarded', 'fag', 'faggot', 'dyke', 'libtard', 'shitty', 'piss',
-'balls', 'bullshit', 'cock', 'cunt', 'tits', 'nuts', 'cocksucker', 'as', 'about', 'than', 'then'
+'balls', 'bullshit', 'cock', 'cunt', 'tits', 'nuts', 'cocksucker', 'as', 'about', 'than', 'then', 'serve', 'all', 'be'
 ]
 
 
@@ -68,7 +70,8 @@ function fetchPic(term) {
                 return picResp.json();
             })
             .then(picData => {
-                displayBackground(picData);
+                var picLink = picData.photos[0].src.original;
+                quotePicEl.setAttribute('src', picLink);
             })
     }
 }
@@ -98,7 +101,14 @@ function displayQuotePic(quoteData) {
 
     var word = chooseRandomWord(quoteData.content);
 
-    
+    fetchPic(word);
+
+    if(quotePicEl.children.length > 0) quotePicEl.removeChild(quotePicEl.childNodes[0]);
+
+    var quoteEl = document.createElement('p');
+    quotePicEl.append(quoteEl);
+    quoteEl.textContent = quoteData.content + ' - ' + quoteData.originator.name;
+
     
 
 }
