@@ -1,5 +1,5 @@
 var backgroundImgEl = document.querySelector(".hero-image");
-var quotePicEl = document.querySelector('#quotePicImg');
+var quotePicEl = document.querySelector('.quotePicContainer');
 var backgroundBtn = document.querySelector("#backgroundBtn");
 var picQuoteBtn = document.querySelector('#picQuoteButton');
 
