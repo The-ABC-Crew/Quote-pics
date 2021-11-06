@@ -35,21 +35,21 @@ header {
 }
 
 
-h1 *{
+h1 {
     height: 10%;
     color: white;
     font-size: 32px;
     background-color: black;
 }
 
-h2 *{
+h2 {
     height: 10%;
     color: white;
     background-color: black;
     font-size: 20px;
 }
 
-p *{
+p {
     color: white;
     background-color: black;
 }
@@ -65,7 +65,7 @@ p *{
     border-width: 20px;
 }
 
-button * {
+button  {
     height: 50px;
     background-color: white;
     font-weight: 800;
@@ -74,17 +74,28 @@ button * {
     width: 565px;
     border: solid black;
     display: inline;
+    font-family: 'Festive', cursive;
+    font-family: 'Fruktur', cursive;
 }
 
+button:hover {
+    background-color: orange;
+    border-radius: 20px;
+}
 
-#picQuoteButton * {
+#picQuoteButton:hover {
+    background-color: blueviolet;
+    border-radius: 30px;
+ 
+}
+
+#picQuoteButton  {
     width: 290px;
     height: 140px;
     font-family:fantasy;
     background-color: magenta;
     line-height: 1.75;
     border: solid 7px black;
-    border-radius: 30px;
     font-size: 28px;
 }
 
