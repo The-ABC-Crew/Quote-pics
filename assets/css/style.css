@@ -1,7 +1,7 @@
 *{
     font-family: 'Festive', cursive;
     font-family: 'Fruktur', cursive;
-    background-color: rgb(185, 182, 182);
+    background-color: black;
     
 }
 .hero-image {
@@ -38,7 +38,7 @@ header {
 h1 {
     height: 10%;
     color: white;
-    font-size: 32px;
+    font-size: 36px;
     background-color: black;
 }
 
@@ -47,22 +47,27 @@ h2 {
     color: white;
     background-color: black;
     font-size: 20px;
+    text-align: center;
 }
 
 p {
     color: white;
     background-color: black;
+    font-size: 20px;
 }
 
 .hero-text {
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #quotePicImg {
-    height: 400px; 
-    width: 350px;
+    height: 500px; 
+    width: 420px;
     justify-content: center;
-    margin-left: 1rem;
+    margin-left: 15rem;
     border-style:ridge;
     border-width: 10px;
 }
@@ -85,6 +90,11 @@ button:hover {
     border-radius: 20px;
 }
 
+#backgroundBtn {
+    text-align: center;
+    
+}
+
 #picQuoteButton:hover {
     background-color: blueviolet;
     border-radius: 30px;
@@ -96,6 +106,7 @@ button:hover {
     height: 140px;
     position: relative;
     margin-left: 5rem;
+    margin-top: 200px;
     font-family:fantasy;
     background-color: magenta;
     line-height: 1.75;
@@ -111,6 +122,7 @@ footer {
     background-color: black;
     font-family: 'Festive', cursive;
     font-family: 'Fruktur', cursive;
+    height: 10px;
 }
 
 #footerText {
