@@ -99,10 +99,11 @@ function displayQuotePic(quoteData) {
 
     fetchPic(word);
 
-    if(quotePicContainer.children.length > 0) quotePicContainer.removeChild(quotePicContainer.childNodes[0]);
+    if(quotePicContainer.children.length > 1) document.querySelector('#quote').remove();
 
     var quoteEl = document.createElement('p');
     quoteEl.setAttribute('class', 'centered')
+    quoteEl.setAttribute('id', 'quote')
     quoteEl.textContent = quoteData.content + ' - ' + quoteData.originator.name;
     quotePicContainer.append(quoteEl);
     
