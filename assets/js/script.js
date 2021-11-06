@@ -74,8 +74,6 @@ function fetchPic(term) {
     }
 }
 
-
-
 // .catch(err => {
 //     console.error(err);
 // });
@@ -101,7 +99,7 @@ function displayQuotePic(quoteData) {
 
     fetchPic(word);
 
-    if(quotePicEl.children.length > 0) quotePicEl.removeChild(quotePicEl.childNodes[0]);
+    if(quotePicContainer.children.length > 0) quotePicContainer.removeChild(quotePicContainer.childNodes[0]);
 
     var quoteEl = document.createElement('p');
     quoteEl.setAttribute('class', 'centered')
