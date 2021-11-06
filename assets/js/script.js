@@ -1,5 +1,15 @@
 var backgroundImgEl = document.querySelector(".hero-image");
 var backgroundBtn = document.querySelector("#backgroundBtn");
+var picQuoteBtn = document.querySelector('#picQuoteButton');
+
+var exclusionArray = ['and', 'the', 'i', 'you', 'we', 'they', 
+'them', 'at', 'is', 'not', 'of', 'to', 'from', 'for', 'who', 'what', 'how', 'why', 'where', 'when', 'it', 'it\'s',
+'he', 'she', 'a', 'you\'re', 'your', 'too', 'there', 'their', 'they\'re', 'with', 'in', 'do', 'done', 'did',
+'our', 'are', 'about', 'that', 'that\'s', 'who', 'whose', 'mine', 'yours', 'by', 'yes', 'no', 'shit', 'bitch',
+'fuck', 'ass', 'whore', 'slut', 'asshole', 'bastard', 'god', 'goddamn', 'goddammit', 'penis', 'vagina', 'pussy',
+'dick', 'motherfucker', 'fucker', 'retard', 'retarded', 'fag', 'faggot', 'dyke', 'libtard', 'shitty', 'piss',
+'balls', 'bullshit', 'cock', 'cunt', 'tits', 'nuts', 'cocksucker', 'as', 'about', 'than', 'then'
+]
 
 
 // Fetches data from QuotePark
@@ -13,11 +23,15 @@ function fetchQuote() {
         }
     })
         .then(quoteResp => {
-            console.log(quoteResp);
             return quoteResp.json();
         })
         .then(quoteData => {
-            console.log(quoteData);
+            var wordCount = quoteData.content.split(' ');
+            if (wordCount.length > 30) {
+                fetchQuote();
+            } else {
+                displayQuotePic(quoteData);
+            }
         })
 
 }
@@ -75,8 +89,35 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
+// Displays quote pic
+function displayQuotePic(quoteData) {
+    console.log(quoteData);
+    console.log(quoteData.content + ' - ' + quoteData.originator.name);
+
+    var word = chooseRandomWord(quoteData.content);
+
+    
+    
+
+}
+
+function chooseRandomWord(quote) {
+    var words = quote.split(' ');
+    var randomWord = words[getRandomInt(words.length)].toLowerCase();
+    randomWord = randomWord.replace(/[!,.?'"]/g,"");
+    for(var i = 0 ; i < exclusionArray.length ; i++){
+        if(randomWord === exclusionArray[i]) randomWord = chooseRandomWord(quote);
+    }
+    return randomWord;
+}
+
 // Event Listeners
 backgroundBtn.addEventListener('click', function (event) {
     event.preventDefault();
     displayBackground(fetchPic());
+})
+
+picQuoteBtn.addEventListener('click', function (event) {
+    event.preventDefault();
+    fetchQuote();
 })
