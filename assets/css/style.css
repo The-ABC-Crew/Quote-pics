@@ -63,7 +63,7 @@ p {
     align-items: center;
 }
 
-#quotePicImg {
+.quotePicContainer {
     height: 500px; 
     width: 420px;
     justify-content: center;
