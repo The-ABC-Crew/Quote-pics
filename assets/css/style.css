@@ -7,7 +7,7 @@
 .hero-image {
     background-image: url("../Images/WEF-Investments-In-Nature-Based-Solutions-Have-To-Triple-By-2030-To-Address-Climate-Change-Biodiversity-Loss.jpg"); /* The image used */
     background-color: #cccccc; /* Used if the image is unavailable */
-    height: 500px; /* You must set a specified height */
+    height: 660px; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
@@ -59,10 +59,12 @@ p {
 }
 
 #quotePicImg {
-    height: 450px;
+    height: 400px; 
     width: 350px;
+    justify-content: center;
+    margin-left: 1rem;
     border-style:ridge;
-    border-width: 20px;
+    border-width: 10px;
 }
 
 button  {
@@ -92,6 +94,8 @@ button:hover {
 #picQuoteButton  {
     width: 290px;
     height: 140px;
+    position: relative;
+    margin-left: 5rem;
     font-family:fantasy;
     background-color: magenta;
     line-height: 1.75;
@@ -105,6 +109,8 @@ aside {
 
 footer {
     background-color: black;
+    font-family: 'Festive', cursive;
+    font-family: 'Fruktur', cursive;
 }
 
 #footerText {
