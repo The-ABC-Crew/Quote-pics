@@ -1,5 +1,6 @@
 var backgroundImgEl = document.querySelector(".hero-image");
-var quotePicEl = document.querySelector('.quotePicContainer');
+var quotePicContainer = document.querySelector('.quotePicContainer');
+var quotePicEl = document.querySelector('#quotePicImg');
 var backgroundBtn = document.querySelector("#backgroundBtn");
 var picQuoteBtn = document.querySelector('#picQuoteButton');
 
@@ -37,9 +38,6 @@ function fetchQuote() {
         })
 
 }
-
-//fetch data from 
-
 
 // Fetches data from Pexels
 function fetchPic(term) {
@@ -106,8 +104,10 @@ function displayQuotePic(quoteData) {
     if(quotePicEl.children.length > 0) quotePicEl.removeChild(quotePicEl.childNodes[0]);
 
     var quoteEl = document.createElement('p');
-    quotePicEl.append(quoteEl);
+    quoteEl.setAttribute('class', 'centered')
     quoteEl.textContent = quoteData.content + ' - ' + quoteData.originator.name;
+    quotePicContainer.append(quoteEl);
+    
 
     
 

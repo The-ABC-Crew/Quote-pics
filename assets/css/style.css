@@ -66,11 +66,27 @@ p {
 .quotePicContainer {
     height: 500px; 
     width: 420px;
-    justify-content: center;
     margin-left: 15rem;
     border-style:ridge;
     border-width: 10px;
+    position: relative;
+    text-align: center;
+    color: black;
 }
+
+#quotePicImg {
+    height: 500px;
+    width: 420px;
+}
+
+
+/* Centers text on quotepic */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
 button  {
     height: 50px;
