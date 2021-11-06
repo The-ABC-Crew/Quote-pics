@@ -22,6 +22,8 @@ function fetchQuote() {
 
 }
 
+//fetch data from 
+
 
 // Fetches data from Pexels
 function fetchPic(term) {
