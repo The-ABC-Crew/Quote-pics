@@ -85,6 +85,10 @@ p {
     text-align: center; 
 }
 
+.quotePicContainer p {
+    background-color: transparent;
+}
+
 
 /* Centers text on quotepic */
 .centered {
