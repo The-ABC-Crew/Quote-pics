@@ -5,10 +5,10 @@ var backgroundBtn = document.querySelector("#backgroundBtn");
 var picQuoteBtn = document.querySelector('#picQuoteButton');
 var picContainerEl = document.querySelector('.picContainer')
 
-var exclusionArray = ['and', 'the', 'i', 'you', 'we', 'they', 
-'them', 'at', 'is', 'not', 'of', 'to', 'from', 'for', 'who', 'what', 'how', 'why', 'where', 'when', 'it', 'it\'s',
-'he', 'she', 'a', 'you\'re', 'your', 'too', 'there', 'their', 'they\'re', 'with', 'in', 'do', 'done', 'did',
-'our', 'are', 'about', 'that', 'that\'s', 'who', 'whose', 'mine', 'yours', 'by', 'yes', 'no', 'shit', 'bitch',
+var exclusionArray = ['and', 'the', 'i', 'you', 'we', 'they', 'im',
+'them', 'at', 'is', 'not', 'of', 'to', 'from', 'for', 'who', 'what', 'how', 'why', 'where', 'when', 'it', 'its',
+'he', 'she', 'a', 'youre', 'your', 'too', 'there', 'their', 'theyre', 'with', 'in', 'do', 'done', 'did',
+'our', 'are', 'about', 'that', 'thats', 'who', 'whose', 'mine', 'yours', 'by', 'yes', 'no', 'shit', 'bitch',
 'fuck', 'ass', 'whore', 'slut', 'asshole', 'bastard', 'god', 'goddamn', 'goddammit', 'penis', 'vagina', 'pussy',
 'dick', 'motherfucker', 'fucker', 'retard', 'retarded', 'fag', 'faggot', 'dyke', 'libtard', 'shitty', 'piss',
 'balls', 'bullshit', 'cock', 'cunt', 'tits', 'nuts', 'cocksucker', 'as', 'about', 'than', 'then', 'serve', 'all', 'be'
@@ -112,7 +112,7 @@ function displayQuotePic(quoteData) {
 function chooseRandomWord(quote) {
     var words = quote.split(' ');
     var randomWord = words[getRandomInt(words.length)].toLowerCase();
-    randomWord = randomWord.replace(/[!,.?'"]/g,"");
+    randomWord = randomWord.replace(/[!,.?':"]/g,"");
     for(var i = 0 ; i < exclusionArray.length ; i++){
         if(randomWord === exclusionArray[i]) randomWord = chooseRandomWord(quote);
     }
