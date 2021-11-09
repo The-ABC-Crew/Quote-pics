@@ -3,7 +3,7 @@ var quotePicContainer = document.querySelector('.quotePicContainer');
 var quotePicEl = document.querySelector('#quotePicImg');
 var backgroundBtn = document.querySelector("#backgroundBtn");
 var picQuoteBtn = document.querySelector('#picQuoteButton');
-
+var picContainerEl = document.querySelector('.picContainer')
 
 var exclusionArray = ['and', 'the', 'i', 'you', 'we', 'they', 
 'them', 'at', 'is', 'not', 'of', 'to', 'from', 'for', 'who', 'what', 'how', 'why', 'where', 'when', 'it', 'it\'s',
@@ -101,12 +101,15 @@ function displayQuotePic(quoteData) {
 
     fetchPic(word);
 
-    if(quotePicEl.children.length > 0) quotePicEl.removeChild(quotePicEl.childNodes[0]);
+    if(picContainerEl.children.length > 1) document.querySelector('#quote').remove();
+
 
     var quoteEl = document.createElement('p');
     quoteEl.setAttribute('class', 'centered')
+    quoteEl.setAttribute('id', 'quote')
+
     quoteEl.textContent = quoteData.content + ' - ' + quoteData.originator.name;
-    quotePicContainer.append(quoteEl);
+    picContainerEl.append(quoteEl);
     
 
     
