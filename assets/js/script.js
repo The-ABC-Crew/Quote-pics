@@ -5,6 +5,7 @@ var backgroundBtn = document.querySelector("#backgroundBtn");
 var picQuoteBtn = document.querySelector('#picQuoteButton');
 var picContainerEl = document.querySelector('.picContainer')
 
+
 var exclusionArray = ['and', 'the', 'i', 'you', 'we', 'they', 'im',
 'them', 'at', 'is', 'not', 'of', 'to', 'from', 'for', 'who', 'what', 'how', 'why', 'where', 'when', 'it', 'its',
 'he', 'she', 'a', 'youre', 'your', 'too', 'there', 'their', 'theyre', 'with', 'in', 'do', 'done', 'did',
@@ -68,8 +69,13 @@ function fetchPic(term) {
                 return picResp.json();
             })
             .then(picData => {
-                var picLink = picData.photos[0].src.original;
-                quotePicEl.setAttribute('src', picLink);
+                if (picData.total_results === 0) {
+                    fetchPic(term)
+                } else {
+                    var picLink = picData.photos[getRandomInt(picData.photos.length)].src.original;
+
+                    quotePicEl.setAttribute('src', picLink);
+                }
             })
     }
 }
@@ -99,7 +105,7 @@ function displayQuotePic(quoteData) {
 
     fetchPic(word);
 
-    if(picContainerEl.children.length > 1) document.querySelector('#quote').remove();
+    if (picContainerEl.children.length > 1) document.querySelector('#quote').remove();
 
     var quoteEl = document.createElement('p');
     quoteEl.setAttribute('class', 'centered')
