@@ -67,7 +67,7 @@ p {
     flex-direction: row;
     justify-content:space-around;
     padding: 0px;
-    margin: 0px;
+    margin: 0pxe;
 }
 
  #quotePicImg{
@@ -75,7 +75,8 @@ p {
     width: 100%;
     margin:0px;
     padding: 0px;
-    
+    /*border-style:ridge;
+    border-width: 10px;*/
  }
 
 .picContainer{
@@ -136,6 +137,8 @@ button  {
     width: 565px;
     border: solid black;
     display: inline;
+    /* font-family: 'Festive', cursive;
+    font-family: 'Fruktur', cursive; */
 }
 
 button:hover {
@@ -162,7 +165,7 @@ button:hover {
     line-height: 1.75;
     border: solid 7px black;
     align-self: center;
-    font-size: 25px;
+    font-size: 28px;
 }
 
 footer {
