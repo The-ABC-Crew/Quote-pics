@@ -56,6 +56,10 @@ p {
     background-color: rgba(0, 0, 0, 0);
     font-size: 20px;
 }
+hidden{
+    visibility: hidden;
+    
+}
 
 .hero-text {
     background-color: rgba(0, 0, 0, 0.411);
