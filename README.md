@@ -9,5 +9,8 @@ In the JS document, we fetched data from quotepark and pexels.
 We used functions to display a random image with random text in the Quote pic area on the right of the background image.
 We used functions to display a random background image when the button on the header is clicked. 
 We added event listeners for both buttons. 
+
 User clicks "CLICK ME TO CHANGE BACKGROUND IMAGE" and a random image is fetched from Pexels and becomes the background image. 
 User clicks "CLICK ME TO GENERATE A QUOTE PIC" buttom and an image appears with a quote on it. 
+
+C:\Users\camyi\bootcamp\homework\Project1ABCs\Quote-pics\assets\Images\image (2).png
