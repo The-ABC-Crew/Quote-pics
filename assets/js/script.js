@@ -85,13 +85,13 @@ function fetchPic(quoteData) {
                 authorization: pexelsApiArr[pexelsi]
             }
         }).then(picResp => {
-            if (quoteResp.status >= 200 && quoteResp.status < 300) {
+            if (picResp.status >= 200 && picResp.status < 300) {
                 hideError();
                 return picResp.json().then(picData => {
                     displayBackground(picData);
                 })
             } else {
-
+                displayError();
             }
 
         })
@@ -105,7 +105,7 @@ function fetchPic(quoteData) {
             }
         })
             .then(picResp => {
-                if (quoteResp.status >= 200 && quoteResp.status < 300) {
+                if (picResp.status >= 200 && picResp.status < 300) {
                     hideError();
                     return picResp.json().then(picData => {
                         if (picData.total_results === 0) {
