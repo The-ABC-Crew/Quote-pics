@@ -56,11 +56,14 @@ p {
     background-color: rgba(0, 0, 0, 0);
     font-size: 20px;
 }
-hidden{
-    visibility: hidden;
-    
-}
+.hidden{
+    visibility: collapse;
 
+}
+.error{
+    align-self: center;
+    /* make prettier right here*/
+} 
 .hero-text {
     background-color: rgba(0, 0, 0, 0.411);
     display: flex;
