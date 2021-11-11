@@ -5,36 +5,23 @@ body, html {
     font-family: 'Festive', cursive;
     font-family: 'Fruktur', cursive;
 }
-.hero-image {
-    background-image: url("../Images/WEF-Investments-In-Nature-Based-Solutions-Have-To-Triple-By-2030-To-Address-Climate-Change-Biodiversity-Loss.jpg"); /* The image used */
-    background-color: #cccccc; /* Used if the image is unavailable */
-    height: 100%; /*You must set a specified height*/
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
 
-main{
-    /* background-color: rgb(95, 6, 184); */
+button  {
+    height: 50px;
+    background-color: white;
+    font-weight: 800;
+    font-size: 28px;
+    font-family: fantasy;
+    width: 565px;
+    border: solid black;
+    display: inline;
 }
 
-header {
-
-    display: block;
-    text-align: center;   
-    font-size: 20px;
-    margin: 0;
-    background-color: black;
-    
+footer {
+    margin: 0%;
+    padding: 0%;
+    background-color: transparent;
 }
-
-.topOfPage {
-    
-    display: flex;
-    flex-direction: column;
-    /* background-color: rgb(34, 190, 190); */
-}
-
 
 h1 {
     height: 10%;
@@ -56,14 +43,16 @@ p {
     background-color: rgba(0, 0, 0, 0);
     font-size: 20px;
 }
-.hidden{
-    visibility: collapse;
 
+.hero-image {
+    background-image: url("../Images/WEF-Investments-In-Nature-Based-Solutions-Have-To-Triple-By-2030-To-Address-Climate-Change-Biodiversity-Loss.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 100%; /*You must set a specified height*/
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
-.error{
-    align-self: center;
-    /* make prettier right here*/
-} 
+
 .hero-text {
     background-color: rgba(0, 0, 0, 0.411);
     display: flex;
@@ -78,15 +67,6 @@ p {
     padding: 0px;
     margin: 0pxe;
 }
-
- #quotePicImg{
-     height: 500px; 
-    width: auto;
-    margin:0px;
-    padding: 0px;
-    /*border-style:ridge;
-    border-width: 10px;*/
- }
 
 .picContainer{
     height: 500px; 
@@ -105,28 +85,28 @@ p {
     position: absolute;
     bottom: 8px;
     left: 16px;
-  }
+}
   
-  /* Top left text */
-  .top-left {
+/* Top left text */
+.top-left {
     position: absolute;
     top: 8px;
     left: 16px;
-  }
+}
   
-  /* Top right text */
-  .top-right {
+/* Top right text */
+.top-right {
     position: absolute;
     top: 8px;
     right: 16px;
-  }
+}
   
-  /* Bottom right text */
-  .bottom-right {
+/* Bottom right text */
+.bottom-right {
     position: absolute;
     bottom: 8px;
     right: 16px;
-  }
+}
 
 /* Centers text on quotepic */
 .centered {
@@ -134,21 +114,19 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-   
-   } 
+} 
 
-button  {
-    height: 50px;
-    background-color: white;
-    font-weight: 800;
-    font-size: 28px;
-    font-family: fantasy;
-    width: 565px;
-    border: solid black;
-    display: inline;
-    /* font-family: 'Festive', cursive;
-    font-family: 'Fruktur', cursive; */
+.hidden{
+    visibility: collapse;
+
 }
+.error{
+    align-self: center;
+    color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+    font-size: 42px;
+} 
 
 button:hover {
     background-color: orange;
@@ -157,7 +135,13 @@ button:hover {
 
 #backgroundBtn {
     text-align: center;
-    
+}
+
+#quotePicImg{
+    height: 500px; 
+    width: auto;
+    margin:0px;
+    padding: 0px;
 }
 
 #picQuoteButton:hover {
@@ -175,13 +159,6 @@ button:hover {
     border: solid 7px black;
     align-self: center;
     font-size: 28px;
-}
-
-footer {
-    margin: 0%;
-    padding: 0%;
-    background-color: transparent;
-    
 }
 
 #footerText {
